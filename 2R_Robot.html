@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2R_Robot</title>
+	<h1>Modeling and Control of 2-DOF Robot Arm</h1>
+	<h3>Introduction</h3>
+	<section>
+		<P>Robotics is defined practically as the study,
+design and use of robot systems for
+manufacturing and generally are used to
+perform highly repetitive, unsafe, hazardous,
+and unpleasant tasks. Robotics many different
+functions that used either in industry and
+manufacture or in complex, clatter and changing
+environment such as pick and place, assembly,
+drilling, welding, machine tool load and unload
+functions, painting, spraying, etc. or in A
+delivery in a hospital and Hotels, Discovering
+the space As a results of these different tasks
+there are different robot arm configuration such
+as rectangular, spherical, cylindrical, revolute
+and prismatic jointed.
+A pick and place robot arm is used to ease
+process of moving materials and supplying the
+motion required in the manufacturing processes.
+The transfer process of the materials is usually
+being accomplished, using man power and as
+the transfer process is repeated for a period of
+time, it can cause injuries to the operator. the
+robot arm preventing injuries and increasing the
+efficiency of the work, with reducing the human
+being errors that cost higly time and martial.</P>
+<h3>Robot Specification And Kinematics </h3>
+<h4>Robot specification</h4>
+
+<p>A two degree of freedom robot arm is described in Figure (1)</p><p>
+	
+	which consists primarily of two links with the
+following specifications in OXY coordinates:<br>
+𝐿1 = 1 m is the length of the first link.<br>
+𝐿2 = 1 m is the length of the second link.<br>
+𝑚1 = 1 kg is the mass of the first link.<br>
+𝑚2 = 1 kg is the link of the second link.<br>
+𝜃1 = the rotation angel of the first link.<br>
+𝜃2 = is the rotation angel of the second link.<br>
+</p>
+
+	</section>
+</head>
+<body>
+	<section>
+		<h3>Robot Kinematics</h3>
+		<h4>Forward Kinematics</h4>
+		<p>The Forward kinematics of a robotic arm is
+determined a group of parameters called
+Denavit-Hartenberg (DH) parameters which
+used for deriving the homogenous
+transformation matrices between the different
+frames assigned on the robot arm structure. The
+DH parameters for a two degree of freedom
+robotic arm are defined as follows:</p>
+<div><table>
+	<tr>
+	<th>Link</th>
+	<th> a(i)</th>
+	<th>alpha(i)</th>
+	<th>d(i)</th>
+	<th>Theta(i)</th>
+	</tr>
+    <tr>
+    	<td>1</td>
+    	<td>L1</td>
+    	<td>0</td>
+    	<td>0</td>
+    	<td>theta(1)</td>
+    </tr>
+     <tr>
+    	<td>2</td>
+    	<td>L2</td>
+    	<td>0</td>
+    	<td>0</td>
+    	<td>theta(2)</td>
+    </tr></table></section></div>
+    >
+    The code matlab of forward kinematics :<br>
+    
+    <img src="forward.png" height="220" width="320">
+    <h3>Inverse Kinematics</h3>
+    <div>The inverse kinematics of a robotic arm is a
+solution of finding the robot arm joint variables
+of given the position Cartesian coordinates of
+the end-effector. The mathematical equations
+used to solve the inverse kinematics problem
+can be derived either algebraically or
+geometrically. The geometrical approach is
+considered to be much easier for robot arms of
+high degrees of freedom. In our Case, we solved
+the inverse kinematics equations for the 2-DOF
+robotic arm shown in Figure(2) using the
+geometrical method</div>
+<div>>The code matlab of inverse kinematics : <br>
+
+<img src="inverse.png" height="200" width="290">
+
+</div>
+
+<h3>Trajectory Planning</h3>
+>The code matlab of the trajectory planning:
+<br><img src="trajectory.png" height="120" width="290">
+<h3>Robot Dynamics</h3>
+<div>The dynamic model of a robot is concerned with
+the movement and the forces involved in the
+robot arm and establishes a mathematical
+relationship between the location of the robot
+joint variables and the dimensional parameters
+of the robo</div>
+<img src="mechanical_model.png" height="300" width="560">
+<h3>Assemblage</h3>
+<div>The final modeling is shown in this figure;we link each function with convient</div>
+<img src="Arm.png"height="500" width="760">
+<p>we Run The model with desired angle of theta1 and we get</p>
+<img src="Meca.png" height="180" width="290">
+<div>To download The file <a href="2R_Robot.rar">Click</div>
+	<br>
+	<footer>
+	  <p>Back to the home page<a href="Belalkaiba.html">page</a></p>
+
+	</footer>
+
+
+	
+
+</body>
+</html>
